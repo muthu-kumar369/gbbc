@@ -1,0 +1,156 @@
+.home-banner-section {
+  position: relative;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+}
+/* .home-banner-section .banner-image{
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+.home-banner-section .banner-content {
+  position: absolute;
+  top: 0;
+}
+.home-banner-section .banner-content .logo-social-icon {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding:20px;
+}
+
+.home-banner-section .banner-content .logo-social-icon .company-logo {
+  width: 192px;
+  height: 55px;
+  cursor: pointer;
+}
+
+.home-banner-section .logo-social-icon .right-icons {
+  /* position: absolute; */
+  /* right: 0; */
+  /* width: 20%; */
+  /* justify-content: space-between; */
+  display: flex;
+}
+
+.home-banner-section .logo-social-icon .right-icons .social-icons {
+  display: flex;
+  position: absolute;
+  top: 32px;
+  right: 250px;
+}
+.home-banner-section .logo-social-icon .right-icons .social-icons .icon{
+  width: 18px;
+  height: 15.43px;
+  margin-inline: 8px;
+  cursor: pointer;
+}
+.home-banner-section .logo-social-icon .right-icons .contact{
+  color: #fff;
+  font-size: 13px;
+  text-align: right;
+}
+
+.home-banner-section .banner-content .signin-manifesto{
+  /* width: 60%; */
+  /* margin: 92px auto; */
+  text-align: center;
+  line-height: 84px;
+  /* position: absolute; */
+  /* top: 200px; */
+  /* right: 250px; */
+}
+.home-banner-section .banner-content .signin-manifesto .title{
+  /* font-size: 60px; */
+  margin-inline: 30px;
+  line-height: 80px;
+}
+.home-banner-section .banner-content .signin-manifesto .content{
+  margin-inline: 90px;
+  line-height: 40px;
+}
+/* .home-banner-section .banner-content .signin-manifesto .sign-button{
+  margin-top: 2%;
+} */
+.home-banner-section .banner-content .signin-manifesto .sign-button .button{
+  width: 50%;
+  background-color: hsl(45, 86%, 56%);
+  color: black;
+  padding:25px 0px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  line-height: 0px;
+  margin-inline: auto;
+  border-color: hsl(45, 86%, 56%);
+  /* color: #fff; */
+  box-shadow: 0 0 20px 20px hsl(45, 86%, 56%) inset, 0 0 0 0 hsl(45, 86%, 56%);
+  transition: all 190ms ease-in-out;
+  
+  &:hover {
+    box-shadow: 0 0 5px 0 hsl(45, 86%, 56%) inset, 0 0 10px 4px hsl(45, 86%, 56%);
+    color:black
+  }
+}
+
+.home-banner-section .banner-content .signin-manifesto .sign-button .button:hover{
+  border: 2px solid #F0C130;
+  background-color: white;
+}
+
+@media only screen and (max-width:768px) {
+  .home-banner-section .banner-content .signin-manifesto .title{
+    /* font-size: 60px; */
+    line-height: 50px;
+  }
+  .home-banner-section .banner-content .signin-manifesto .content{
+    line-height: 30px;
+  }
+  .home-banner-section .banner-content .logo-social-icon .company-logo {
+    width: 162px;
+    height: 55px;
+  }
+  .home-banner-section .logo-social-icon .right-icons .social-icons {
+    display: flex;
+    position: absolute;
+    top: 32px;
+    right: 210px;
+  }
+  
+}
+@media only screen and (max-width:427px) {
+  .home-banner-section .banner-image img{
+    width: 650px;
+    height: 500px;
+  }
+  .home-banner-section .banner-content .signin-manifesto{
+    width: 100%;
+  }
+  .home-banner-section .banner-content .signin-manifesto .title{
+    margin-inline: 10px;
+  }
+  .home-banner-section .banner-content .signin-manifesto .content{
+    margin-inline: 10px;
+  }
+  
+  .home-banner-section .banner-content .logo-social-icon .company-logo {
+    width: 92px;
+    height: 55px;
+  }
+  .home-banner-section .logo-social-icon .right-icons .social-icons {
+    display: flex;
+    position: absolute;
+    top: 32px;
+    right: 130px;
+  }
+  .home-banner-section .logo-social-icon .right-icons .social-icons .icon{
+    width: 13px;
+    height: 15;
+    margin-inline: 2px;
+  }
+  .home-banner-section .logo-social-icon .right-icons .contact{
+    font-size: 10px;
+  }
+  .home-banner-section .banner-content .signin-manifesto .sign-button .button{
+    padding:26px 0px;
+  }
+}
