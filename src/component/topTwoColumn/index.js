@@ -28,7 +28,7 @@ export default function TopTwoColumn({ data }) {
                                             {items?.image.map((item, i) => {
                                                 return (
                                                     <div className="image-item" key={i}>
-                                                        <Image src={item}  width={"100%"} height={"100%"}></Image>
+                                                        <Image src={item}  width={"100%"} height={"100%"} alt="grid image"></Image>
                                                     </div>
                                                 )
                                             })}
@@ -43,7 +43,7 @@ export default function TopTwoColumn({ data }) {
                                 return (
                                     <>
                                         <div className={`${item?.design} mt-4 md:mt-10 w-`} key={index} >
-                                            <Link href={"#"}  >{item?.text}</Link>
+                                            <Link href={"#"} >{item?.text}</Link>
                                         </div>
                                     </>
                                 )

@@ -14,7 +14,7 @@ export default function Footer({data}){
                         <div className="menu">
                             {data?.footerMenu ? data?.footerMenu.map((item, i) => {
                                 return (
-                                    <div className="menu-item">
+                                    <div className="menu-item" key={i}>
                                         <Link href={`${item == 'Contact Us' ? `mailto:${data?.email}` :"#"}`} key={i}>{item}</Link>
                                     </div>
                                 )
