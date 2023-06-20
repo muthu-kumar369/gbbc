@@ -7,7 +7,7 @@ export default function Footer({data}){
         <section className="footer-section">
         <div className="footer p-3">
                     <div className="footer-logo">
-                        <Image src={data?.logo}></Image>
+                        <Image src={data?.logo} alt="footer logo"></Image>
                     </div>
                     <div className="copy-right">
                         <p>{data?.copyright}</p>

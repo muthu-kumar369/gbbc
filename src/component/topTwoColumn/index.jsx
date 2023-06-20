@@ -27,8 +27,8 @@ export default function TopTwoColumn({ data }) {
                                         <div className={`column-image column-image${index}`} key={index}>
                                             {items?.image.map((item, i) => {
                                                 return (
-                                                    <div className="image-item">
-                                                        <Image src={item} key={i} width={"100%"} height={"100%"}></Image>
+                                                    <div className="image-item" key={i}>
+                                                        <Image src={item}  width={"100%"} height={"100%"}></Image>
                                                     </div>
                                                 )
                                             })}

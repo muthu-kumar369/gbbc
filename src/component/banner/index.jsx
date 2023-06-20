@@ -6,19 +6,19 @@ export default function HomeBanner({ data }) {
         <>
             <section className="home-banner-section">
                 <div className="banner-image">
-                    <Image src={data?.bannerImage}></Image>
+                    <Image src={data?.bannerImage} alt="banner image"></Image>
                 </div>
                 <div className="banner-content">
                     <div className="logo-social-icon mx-auto">
                         <div className="company-logo">
-                            <Image src={data.logo}></Image>
+                            <Image src={data.logo} alt="logo"></Image>
                         </div>
                         <div className="right-icons">
                             <div className="social-icons">
                                 {data?.socialIcons ? data?.socialIcons.map((item, index) => {
                                     return (
                                         <div className="icon" key={index}>
-                                            <Image src={item}></Image>
+                                            <Image src={item} alt="social-icons"></Image>
                                         </div>
                                     )
                                 }) : ""}
